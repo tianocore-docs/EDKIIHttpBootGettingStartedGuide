@@ -10,13 +10,13 @@ The steps to configure DHCPv4 server are as follows:
  max-lease-time 7200;
  ddns-update-style none;
  log-facility local7;
- \#option definitions common to all supported networks…
+ #option definitions common to all supported networks…
  option domain-name “cloudboot.com”;
  option domain-name-servers 192.168.10.20;
  option routers 192.168.10.1;
  option vendor-class-identifier “HTTPClient”;
  option bootfile-name “http://www.cloudboot.com:8080/EFI/Shell.efi”;
- \#This declaration allows BOOTP clients to get dynamic address.
+ #This declaration allows BOOTP clients to get dynamic address.
  subnet 192.168.10.0 netmask 255.255.255.0 {
         range 192.168.10.100 192.168.10.250;
         option subnet-mask 255.255.255.0;
