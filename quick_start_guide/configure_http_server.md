@@ -2,14 +2,15 @@
 
 The steps to configure HTTP server follow:
 
-1.  Download Tomcat 7.0 and install;
+1. Download Tomcat 7.0 and install;
 
-Start Tomcat service;
+2. Start Tomcat service;
 
-Create a new folder “EFI” under the root folder of Tomcat webapp:.
+3. Create a new folder “EFI” under the root folder of Tomcat webapp:.
 
-EXAMPLE: C:\Program Files (x86)\Apache Software Foundation\Tomcat 7.0\webapps\ROOT\EFI
+    * EXAMPLE: C:\Program Files (x86)\Apache Software Foundation\Tomcat 7.0\webapps\ROOT\EFI
 
-Copy a shell application into the EFI folder and change the name to “Shell.efi” (same as the configuration in dhcpd.cong or dhcpd6.conf)
+4. Copy a shell application into the EFI folder and change the name to “Shell.efi” (same as the configuration in dhcpd.cong or dhcpd6.conf)
 
+![](/media/image4.png)
 Figure 4: Configure HTTP Service - Tomcat
