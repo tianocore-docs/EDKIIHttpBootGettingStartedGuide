@@ -1,4 +1,104 @@
-# Getting Started Guide of EDKII HTTP Boot {#getting-started-guide-of-edkii-http-boot}
+<!--- @file
+  README.md for EDK II Template Specification
+
+  Copyright (c) 2018, Intel Corporation. All rights reserved.<BR>
+
+  Redistribution and use in source (original document form) and 'compiled'
+  forms (converted to PDF, epub, HTML and other formats) with or without
+  modification, are permitted provided that the following conditions are met:
+
+  1) Redistributions of source code (original document form) must retain the
+     above copyright notice, this list of conditions and the following
+     disclaimer as the first lines of this file unmodified.
+
+  2) Redistributions in compiled form (transformed to other DTDs, converted to
+     PDF, epub, HTML and other formats) must reproduce the above copyright
+     notice, this list of conditions and the following disclaimer in the
+     documentation and/or other materials provided with the distribution.
+
+  THIS DOCUMENTATION IS PROVIDED BY TIANOCORE PROJECT "AS IS" AND ANY EXPRESS OR
+  IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF
+  MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO
+  EVENT SHALL TIANOCORE PROJECT  BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,
+  SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO,
+  PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS;
+  OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY,
+  WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR
+  OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS DOCUMENTATION, EVEN IF
+  ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+
+-->
+
+<img src="media/TianocoreTitlePageLogo.jpg" width="300" />
+
+### {{ book.title }}
+
+{% if book.draft %}
+** DRAFT FOR REVIEW **
+{% else %}
+** {{ book.version }} **
+{% endif %}
+
+
+
+** {{ gitbook.time|date('MM/DD/YYYY hh:mm:ss') }} **
+
+{% if book.udkrelease %}
+** {{ book.udkrelease }} **
+{% endif %}
+
+** {{ book.version }} **
+
+##### WHITEPAPER
+
+#### Contributed by
+
+Ye Ting, 
+
+Fu Siyuan, 
+
+Zhang Lubo
+
+
+
+
+
+
+### Acknowledgements
+
+Redistribution and use in source (original document form) and 'compiled'
+forms (converted to PDF, epub, HTML and other formats) with or without
+modification, are permitted provided that the following conditions are met:
+
+1. Redistributions of source code (original document form) must retain the
+   above copyright notice, this list of conditions and the following
+   disclaimer as the first lines of this file unmodified.
+
+2. Redistributions in compiled form (transformed to other DTDs, converted to
+   PDF, epub, HTML and other formats) must reproduce the above copyright
+   notice, this list of conditions and the following disclaimer in the
+   documentation and/or other materials provided with the distribution.
+
+THIS DOCUMENTATION IS PROVIDED BY TIANOCORE PROJECT "AS IS" AND ANY EXPRESS OR
+IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF
+MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO
+EVENT SHALL TIANOCORE PROJECT  BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,
+SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO,
+PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS;
+OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY,
+WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR
+OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS DOCUMENTATION, EVEN IF
+ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+
+Copyright (c) 2018, Intel Corporation. All rights reserved.
+
+### Revision History
+
+| Revision   | Revision History   | Date        |
+| ---------- | ------------------ | ----------- |
+| 0.l0       | Initial release.   | March 2017  |
+| 0.20       | Second release.    | March 2017  |
+# Getting Started Guide of EDK II HTTP Boot {#getting-started-guide-of-edkii-http-boot}
 
 Getting Started Guide of EDKII HTTP Boot
 
@@ -10,18 +110,3 @@ WHITEPAPER
 
 Ye Ting, Fu Siyuan, Zhang Lubo
 
-INFORMATION IN THIS DOCUMENT IS PROVIDED IN CONNECTION WITH INTEL® PRODUCTS. NO LICENSE, EXPRESS OR IMPLIED, BY ESTOPPEL OR OTHERWISE, TO ANY INTELLECTUAL PROPERTY RIGHTS IS GRANTED BY THIS DOCUMENT. EXCEPT AS PROVIDED IN INTEL’S TERMS AND CONDITIONS OF SALE FOR SUCH PRODUCTS, INTEL ASSUMES NO LIABILITY WHATSOEVER, AND INTEL DISCLAIMS ANY EXPRESS OR IMPLIED WARRANTY RELATING TO SALE AND/OR USE OF INTEL PRODUCTS INCLUDING LIABILITY OR WARRANTIES RELATING TO FITNESS FOR A PARTICULAR PURPOSE, MERCHANTABILITY, OR INFRINGEMENT OF ANY PATENT, COPYRIGHT OR OTHER INTELLECTUAL PROPERTY RIGHT. Intel products are not intended for use in medical, life saving, or life sustaining applications.
-
-Intel may make changes to specifications and product descriptions at any time, without notice.
-
-Designers must not rely on the absence or characteristics of any features or instructions marked “reserved” or “undefined.” Intel reserves these for future definition and shall have no responsibility whatsoever for conflicts or incompatibilities arising from future changes to them.
-
-The Intel® UEFI Development Kit Debugger Tool may contain design defects or errors known as errata which may cause the product to deviate from published specifications. Current characterized errata are available on request.
-
-Contact your local Intel sales office or your distributor to obtain the latest specifications and before placing your product order.
-
-Intel®, Intel® UEFI Development Kit Debugger Tool, Intel® UDK Debugger Tool, and the Intel® logo are trademarks or registered trademarks of Intel® Corporation or its subsidiaries in the United States and other countries.
-
-Other names and brands may be claimed as the property of others.
-
-Copyright© 2015 – 2-16 Intel Corporation. All rights reserved.
