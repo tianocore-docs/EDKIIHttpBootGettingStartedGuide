@@ -1,5 +1,5 @@
 <!--- @file
-  README.md for EDK II Template Specification
+  README.md for Getting Started Guide of EDK II HTTP Boot
 
   Copyright (c) 2018, Intel Corporation. All rights reserved.<BR>
 
@@ -30,6 +30,8 @@
 -->
 
 <img src="media/TianocoreTitlePageLogo.jpg" width="300" />
+# Getting Started Guide of EDK II HTTP Boot {#getting-started-guide-of-edkii-http-boot}
+
 
 ### {{ book.title }}
 
@@ -90,23 +92,18 @@ WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR
 OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS DOCUMENTATION, EVEN IF
 ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
-Copyright (c) 2018, Intel Corporation. All rights reserved.
+Copyright&#169  2018, Intel Corporation. All rights reserved.
 
 ### Revision History
 
 | Revision   | Revision History   | Date        |
 | ---------- | ------------------ | ----------- |
-| 0.l0       | Initial release.   | March 2017  |
-| 0.20       | Second release.    | March 2017  |
-# Getting Started Guide of EDK II HTTP Boot {#getting-started-guide-of-edkii-http-boot}
+| 0.50       | Initial release.                              | August 2015  |
+| 0.60       | Include HTTP Utilities protocol and driver    | August 2015  |
+| 0.70       | Add Http Boot over IPv6 stack                 | December 2015  |
+| 0.80       | Corrections to code in section 2.3.           | April 2016  |
+| 0.90       | Add PCD setting for HTTP connection.          | January 2018 |
+|      |                                |    |
 
-Getting Started Guide of EDKII HTTP Boot
 
-January 2018
-
-Revision 0.9
-
-WHITEPAPER
-
-Ye Ting, Fu Siyuan, Zhang Lubo
 
