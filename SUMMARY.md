@@ -34,7 +34,7 @@
 
   * [Figure 5 Select “UEFI Http” to boot over IPv4 stack](quick_start_guide/run_http_boot.md#figure-5-select--uefi-http--to-boot-over-ipv4-stack)
 
-  * [Figure 6 Select “UEFI Http 2” to boot over IPv6 stack](quick_start_guide/run_http_boot.md#figure-5-select--uefi-http2--to-boot-over-ipv6-stack)
+  * [Figure 6 Select “UEFI Http 2” to boot over IPv6 stack](quick_start_guide/run_http_boot.md#figure-6-select--uefi-http2--to-boot-over-ipv6-stack)
 
   * [Figure 7 Boot the downloaded UEFI Shell](quick_start_guide/run_http_boot.md#figure-7-boot-the-downloaded-uefi-shell)
 
