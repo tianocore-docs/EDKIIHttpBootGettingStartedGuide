@@ -13,4 +13,5 @@ The steps to configure HTTP server follow:
 4. Copy a shell application into the EFI folder and change the name to “Shell.efi” (same as the configuration in dhcpd.cong or dhcpd6.conf)
 
 ![](/media/image4.png)
-Figure 4: Configure HTTP Service - Tomcat
+
+###### Figure 4 Configure HTTP Service - Tomcat{#figure-4-configure-http-service-tomcat}

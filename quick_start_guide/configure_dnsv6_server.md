@@ -8,4 +8,5 @@ The steps to configure DNSv6 server are shown as follows:
 
 fec0:0:0:20::15.
 ![](/media/image3.png)
-Figure 3: Configure DNSv6 Service
+
+###### Figure 3 Configure DNSv6 Service{#figure-3-configure-dnsv6}
