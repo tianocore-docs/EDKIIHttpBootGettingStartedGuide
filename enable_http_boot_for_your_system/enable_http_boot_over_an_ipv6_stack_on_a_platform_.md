@@ -12,7 +12,7 @@ MdeModulePkg\Library\DxeNetLib\DxeNetLib.inf
 3. Update your platform DSC file:
 
   * Add HTTP and DNS Drivers
-```
+```ini
  NetworkPkg\HttpDxe\HttpDxe.inf
  NetworkPkg\HttpBootDxe\HttpBootDxe.inf
  NetworkPkg\HttpUtilitiesDxe\HttpUtilitiesDxe.inf
@@ -23,7 +23,7 @@ MdeModulePkg\Library\DxeNetLib\DxeNetLib.inf
 
 4. Finally, update your platform FDF file:
   * Add HTTP and DNS Drivers
-```
+```ini
   INF NetworkPkg\HttpDxe\HttpDxe.inf
   INF NetworkPkg\HttpBootDxe\HttpBootDxe.inf
   INF NetworkPkg\HttpUtilitiesDxe\HttpUtilitiesDxe.inf

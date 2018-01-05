@@ -3,7 +3,7 @@
 HTTP communication is forbidden by default due to security consideration (only HTTPS is allowed). You need to override the default PCD setting in your platform DSC file to allow HTTP connections.
 
 1.  Update your platform DSC file to add following line to [PcdsFixedAtBuild] section:
-```
+```ini
 gEfiNetworkPkgTokenSpaceGuid.PcdAllowHttpConnections|TRUE
 ```
 

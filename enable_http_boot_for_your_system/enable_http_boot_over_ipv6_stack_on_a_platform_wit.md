@@ -7,7 +7,7 @@ First, you need update the network modules to latest revision. The most convenie
 Then, update your platform files as follows:
 
 1. (do steps 1-4 from the previous section) Update your platform DSC file to add following drivers:
-```
+```ini
  MdeModulePkg\Universal\Network\DpcDxe\DpcDxe.inf
  MdeModulePkg\Universal\Network\SnpDxe\SnpDxe.inf
  MdeModulePkg\Universal\Network\MnpDxe\MnpDxe.inf
@@ -21,8 +21,8 @@ Then, update your platform files as follows:
  NetworkPkg\HttpUtilitiesDxe\HttpUtilitiesDxe.inf
  NetworkPkg\DnsDxe\DnsDxe.inf
 ```
-2.  Update your platform DSC file to add following libraries to [LibraryClasses] section:
-```
+2.  Update your platform DSC file to add following libraries to `[LibraryClasses]` section:
+```ini
  DpcLib|MdeModulePkg\Library\DxeDpcLib\DxeDpcLib.inf
  NetLib|MdeModulePkg\Library\DxeNetLib\DxeNetLib.inf
  IpIoLib|MdeModulePkg\Library\DxeIpIoLib\DxeIpIoLib.inf
@@ -31,7 +31,7 @@ Then, update your platform files as follows:
  HttpLib|MdeModulePkg\Library\DxeHttpLib\DxeHttpLib.inf
 ```
 3. Update your platform FDF file to add following drivers:
-```
+```ini
  INF MdeModulePkg\Universal\Network\DpcDxe\DpcDxe.inf
  INF MdeModulePkg\Universal\Network\SnpDxe\SnpDxe.inf
  INF MdeModulePkg\Universal\Network\MnpDxe\MnpDxe.inf

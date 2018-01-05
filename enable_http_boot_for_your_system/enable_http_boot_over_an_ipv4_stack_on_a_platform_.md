@@ -21,7 +21,7 @@ Then, update your platform files as follows:
  NetworkPkg\HttpUtilitiesDxe\HttpUtilitiesDxe.inf
  NetworkPkg\DnsDxe\DnsDxe.inf
 ```
-2.  Update your platform DSC file to add following libraries to   [LibraryClasses] section:
+2.  Update your platform DSC file to add following libraries to   `[LibraryClasses]` section:
 ```ini
  DpcLib|MdeModulePkg\Library\DxeDpcLib\DxeDpcLib.inf
  NetLib|MdeModulePkg\Library\DxeNetLib\DxeNetLib.inf
