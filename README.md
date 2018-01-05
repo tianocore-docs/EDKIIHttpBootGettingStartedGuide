@@ -32,8 +32,9 @@
 <img src="media/TianocoreTitlePageLogo.jpg" width="300" />
 # Getting Started Guide of EDK II HTTP Boot {#getting-started-guide-of-edkii-http-boot}
 
-
+<!---
 ### {{ book.title }}
+-->
 
 {% if book.draft %}
 ** DRAFT FOR REVIEW **
@@ -102,7 +103,7 @@ Copyright (c)  2018, Intel Corporation. All rights reserved.
 | 0.60       | Include HTTP Utilities protocol and driver    | August 2015  |
 | 0.70       | Add Http Boot over IPv6 stack                 | December 2015  |
 | 0.80       | Corrections to code in section 2.3.           | April 2016  |
-| 0.90       | Add PCD setting for HTTP connection.          | January 2018 |
+| 0.90       | Add PCD setting for HTTP connection. Convert to GitBook   | January 2018 |
 
 
 
