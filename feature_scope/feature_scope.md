@@ -29,4 +29,4 @@ The current implementation updates the following module in an EDKII network stac
 
 * IP4 Driver
 
-  `MdeModulePkg\Universal\Network\Ip4Dxe\Ip4Dxe.in`f
+  `MdeModulePkg\Universal\Network\Ip4Dxe\Ip4Dxe.inf`
