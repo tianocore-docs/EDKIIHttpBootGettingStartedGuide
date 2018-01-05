@@ -103,8 +103,14 @@ Copyright&#169  2018, Intel Corporation. All rights reserved.
 | 0.70       | Add Http Boot over IPv6 stack                 | December 2015  |
 | 0.80       | Corrections to code in section 2.3.           | April 2016  |
 | 0.90       | Add PCD setting for HTTP connection.          | January 2018 |
-|            |                                               |              |
 
+
+
+<!--- end of README.md
+-->
+
+
+     
 
 
 
