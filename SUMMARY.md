@@ -20,22 +20,14 @@
   * [Enable HTTP Boot over IPv6 stack on a platform without EDKII network](enable_http_boot_for_your_system/enable_http_boot_over_ipv6_stack_on_a_platform_wit.md)
   * [Modify PCD setting to allow HTTP connections](enable_http_boot_for_your_system/modify_pcd_setting_to_allow_http_connections.md)
 
----
+## Figures
 
-* [Figures](figures.md)
-
+* [Figures](FIGURES.md)
   * [Figure 1 HTTP boot test-bed](quick_start_guide/network_topology.md#figure-1-http-boot-test-bed)
-
   * [Figure 2 Configure DNSv4 Service](quick_start_guide/configure_dnsv4_server.md#figure-2-configure-dnsv4)
-
   * [Figure 3 Configure DNSv4 Service](quick_start_guide/configure_dnsv6_server.md#figure-3-configure-dnsv6)
-
   * [Figure 4 Configure HTTP Service - Tomcat](quick_start_guide/configure_http_server.md#figure-4-configure-http-service-tomcat)
-
   * [Figure 5 Select “UEFI Http” to boot over IPv4 stack](quick_start_guide/run_http_boot.md#figure-5-select--uefi-http--to-boot-over-ipv4-stack)
-
   * [Figure 6 Select “UEFI Http 2” to boot over IPv6 stack](quick_start_guide/run_http_boot.md#figure-6-select--uefi-http2--to-boot-over-ipv6-stack)
-
   * [Figure 7 Boot the downloaded UEFI Shell](quick_start_guide/run_http_boot.md#figure-7-boot-the-downloaded-uefi-shell)
-
 
