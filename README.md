@@ -92,7 +92,7 @@ WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR
 OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS DOCUMENTATION, EVEN IF
 ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
-Copyright&#169  2018, Intel Corporation. All rights reserved.
+Copyright (c)  2018, Intel Corporation. All rights reserved.
 
 ### Revision History
 
