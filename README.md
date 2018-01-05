@@ -56,16 +56,11 @@
 
 #### Contributed by
 
-Ye Ting, 
+Ye Ting, Intel Corporation
 
-Fu Siyuan, 
+Fu Siyuan, Intel Corporation
 
-Zhang Lubo
-
-
-
-
-
+Zhang Lubo, Intel Corporation
 
 ### Acknowledgements
 
