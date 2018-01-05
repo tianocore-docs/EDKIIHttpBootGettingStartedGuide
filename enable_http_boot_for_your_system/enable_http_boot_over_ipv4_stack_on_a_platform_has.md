@@ -19,7 +19,7 @@ If your system already has EDKII IPv4 network stack, you need update the network
     ~~MdeModulePkg\Universal\Network\Ip4ConfigDxe\Ip4ConfigDxe.inf~~
 
   * Add HTTP and DNS Drivers
-```
+```ini
 NetworkPkg\HttpDxe\HttpDxe.inf
  NetworkPkg\HttpBootDxe\HttpBootDxe.inf
  NetworkPkg\HttpUtilitiesDxe\HttpUtilitiesDxe.inf
@@ -33,7 +33,7 @@ NetworkPkg\HttpDxe\HttpDxe.inf
   * Remove IP4Config Driver
   ~~INF MdeModulePkg\Universal\Network\Ip4ConfigDxe\Ip4ConfigDxe.inf~~
   * Add HTTP and DNS Drivers
-```
+```ini
  INF NetworkPkg\HttpDxe\HttpDxe.inf
  INF NetworkPkg\HttpBootDxe\HttpBootDxe.inf
  INF NetworkPkg\HttpUtilitiesDxe\HttpUtilitiesDxe.inf
