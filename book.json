@@ -4,7 +4,6 @@
     "title"   : "Getting Started Guide of EDK II HTTP Boot",
     "version" : "Revision 0.90"
   },
-
-  "plugins": ["puml"],
+  "plugins": ["puml-aleung"],
   "pluginsConfig": {}
 }
