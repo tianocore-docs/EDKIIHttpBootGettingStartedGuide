@@ -1,0 +1,679 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Enable HTTP Boot over IPv6 stack on a platform without EDKII network · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+        <link rel="stylesheet" href="../styles/website.css">
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="modify_pcd_setting_to_allow_http_connections.html" />
+    
+    
+    <link rel="prev" href="enable_http_boot_over_an_ipv6_stack_on_a_platform_.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Getting Started Guide of EDKII HTTP Boot
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../feature_scope/">
+            
+                <a href="../feature_scope/">
+            
+                    
+                    Feature Scope
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../feature_scope/related_protocols.html">
+            
+                <a href="../feature_scope/related_protocols.html">
+            
+                    
+                    Related Protocols
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../feature_scope/feature_scope.html">
+            
+                <a href="../feature_scope/feature_scope.html">
+            
+                    
+                    Feature Scope
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../quick_start_guide/">
+            
+                <a href="../quick_start_guide/">
+            
+                    
+                    Quick Start Guide
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../quick_start_guide/network_topology.html">
+            
+                <a href="../quick_start_guide/network_topology.html">
+            
+                    
+                    Network topology
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../quick_start_guide/configure_dhcpv4_server.html">
+            
+                <a href="../quick_start_guide/configure_dhcpv4_server.html">
+            
+                    
+                    Configure DHCPv4 server
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="../quick_start_guide/configure_dhcpv6_server.html">
+            
+                <a href="../quick_start_guide/configure_dhcpv6_server.html">
+            
+                    
+                    Configure DHCPv6 server
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="../quick_start_guide/configure_dnsv4_server.html">
+            
+                <a href="../quick_start_guide/configure_dnsv4_server.html">
+            
+                    
+                    Configure DNSv4 server
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5" data-path="../quick_start_guide/configure_dnsv6_server.html">
+            
+                <a href="../quick_start_guide/configure_dnsv6_server.html">
+            
+                    
+                    Configure DNSv6 server
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6" data-path="../quick_start_guide/configure_http_server.html">
+            
+                <a href="../quick_start_guide/configure_http_server.html">
+            
+                    
+                    Configure HTTP server
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.7" data-path="../quick_start_guide/build_nt32_simulator.html">
+            
+                <a href="../quick_start_guide/build_nt32_simulator.html">
+            
+                    
+                    Build NT32 Simulator
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.8" data-path="../quick_start_guide/run_http_boot.html">
+            
+                <a href="../quick_start_guide/run_http_boot.html">
+            
+                    
+                    Run HTTP boot 
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Enable HTTP boot for your system
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="enable_http_boot_over_ipv4_stack_on_a_platform_has.html">
+            
+                <a href="enable_http_boot_over_ipv4_stack_on_a_platform_has.html">
+            
+                    
+                    Enable HTTP Boot over IPv4 stack on a platform has EDKII network
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="enable_http_boot_over_an_ipv4_stack_on_a_platform_.html">
+            
+                <a href="enable_http_boot_over_an_ipv4_stack_on_a_platform_.html">
+            
+                    
+                    Enable HTTP Boot over an IPv4 stack on a platform without EDKII network
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="enable_http_boot_over_an_ipv6_stack_on_a_platform_.html">
+            
+                <a href="enable_http_boot_over_an_ipv6_stack_on_a_platform_.html">
+            
+                    
+                    Enable HTTP Boot over an IPv6 stack on a platform with EDKII network
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.4.4" data-path="enable_http_boot_over_ipv6_stack_on_a_platform_wit.html">
+            
+                <a href="enable_http_boot_over_ipv6_stack_on_a_platform_wit.html">
+            
+                    
+                    Enable HTTP Boot over IPv6 stack on a platform without EDKII network
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.5" data-path="modify_pcd_setting_to_allow_http_connections.html">
+            
+                <a href="modify_pcd_setting_to_allow_http_connections.html">
+            
+                    
+                    Modify PCD setting to allow HTTP connections
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Figures</li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" data-path="../FIGURES.html">
+            
+                <a href="../FIGURES.html">
+            
+                    
+                    Figures
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1.1" data-path="../quick_start_guide/network_topology.html">
+            
+                <a href="../quick_start_guide/network_topology.html#figure-1-http-boot-test-bed">
+            
+                    
+                    Figure 1 HTTP boot test-bed
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.2" data-path="../quick_start_guide/configure_dnsv4_server.html">
+            
+                <a href="../quick_start_guide/configure_dnsv4_server.html#figure-2-configure-dnsv4">
+            
+                    
+                    Figure 2 Configure DNSv4 Service
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.3" data-path="../quick_start_guide/configure_dnsv6_server.html">
+            
+                <a href="../quick_start_guide/configure_dnsv6_server.html#figure-3-configure-dnsv6">
+            
+                    
+                    Figure 3 Configure DNSv4 Service
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.4" data-path="../quick_start_guide/configure_http_server.html">
+            
+                <a href="../quick_start_guide/configure_http_server.html#figure-4-configure-http-service-tomcat">
+            
+                    
+                    Figure 4 Configure HTTP Service - Tomcat
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.5" data-path="../quick_start_guide/run_http_boot.html">
+            
+                <a href="../quick_start_guide/run_http_boot.html#figure-5-select--uefi-http--to-boot-over-ipv4-stack">
+            
+                    
+                    Figure 5 Select “UEFI Http” to boot over IPv4 stack
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.6" data-path="../quick_start_guide/run_http_boot.html">
+            
+                <a href="../quick_start_guide/run_http_boot.html#figure-6-select--uefi-http2--to-boot-over-ipv6-stack">
+            
+                    
+                    Figure 6 Select “UEFI Http 2” to boot over IPv6 stack
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.7" data-path="../quick_start_guide/run_http_boot.html">
+            
+                <a href="../quick_start_guide/run_http_boot.html#figure-7-boot-the-downloaded-uefi-shell">
+            
+                    
+                    Figure 7 Boot the downloaded UEFI Shell
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >Enable HTTP Boot over IPv6 stack on a platform without EDKII network</a>
+    </h1>
+</div>
+<div>
+    <!-- 
+    <img style="float:left; align:middle; height:2em" src="media/TianocoreTitlePageLogo.jpg"/>
+     -->
+    
+      <h2>
+        <div style="position:absolute;text-align:left">Getting Started Guide of EDK II HTTP Boot</div>
+        <div style="position:absolute;width:100%;text-align:center">DRAFT [12/01/2020 07:05:24]</div>
+        <div style="text-align:right">Revision 0.90</div>
+      </h2>  
+    
+    <hr>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+                                <section class="normal markdown-section">
+                                
+                                <!--- @file
+  enable_http_boot_for_your_system/enable_http_boot_over_ipv6_stack_on_a_platform_wit.md for Getting Started Guide of EDK    II HTTP Boot
+
+  Copyright (c) 2018, Intel Corporation. All rights reserved.<BR>
+
+  Redistribution and use in source (original document form) and 'compiled'
+  forms (converted to PDF, epub, HTML and other formats) with or without
+  modification, are permitted provided that the following conditions are met:
+
+  1) Redistributions of source code (original document form) must retain the
+     above copyright notice, this list of conditions and the following
+     disclaimer as the first lines of this file unmodified.
+
+  2) Redistributions in compiled form (transformed to other DTDs, converted to
+     PDF, epub, HTML and other formats) must reproduce the above copyright
+     notice, this list of conditions and the following disclaimer in the
+     documentation and/or other materials provided with the distribution.
+
+  THIS DOCUMENTATION IS PROVIDED BY TIANOCORE PROJECT "AS IS" AND ANY EXPRESS OR
+  IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF
+  MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO
+  EVENT SHALL TIANOCORE PROJECT  BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,
+  SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO,
+  PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS;
+  OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY,
+  WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR
+  OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS DOCUMENTATION, EVEN IF
+  ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+
+-->
+<h2 id="enable-http-boot-over-ipv6-stack-on-a-platform-without-edkii-network">Enable HTTP Boot over IPv6 stack on a platform without EDKII network </h2>
+<p>If you want to enable HTTP boot on a system without EDK II IPv6 network stack, you need add corresponding network modules to your platform files.</p>
+<p>First, you need update the network modules to latest revision. The most convenient solution is to update MdePkg, MdeModulePkg, and NetworkPkg to latest revisions from an EDK II repository.</p>
+<p>Then, update your platform files as follows:</p>
+<ol>
+<li><p>(do steps 1-4 from the previous section) Update your platform DSC file to add following drivers:</p>
+<pre><code class="lang-ini">MdeModulePkg\Universal\Network\DpcDxe\DpcDxe.inf
+MdeModulePkg\Universal\Network\SnpDxe\SnpDxe.inf
+MdeModulePkg\Universal\Network\MnpDxe\MnpDxe.inf
+
+NetworkPkg\Ip6Dxe\Ip6Dxe.inf
+NetworkPkg\TcpDxe\TcpDxe.inf
+NetworkPkg\Udp6Dxe\Udp6Dxe.inf
+NetworkPkg\Dhcp6Dxe\Dhcp6Dxe.inf
+NetworkPkg\HttpDxe\HttpDxe.inf
+NetworkPkg\HttpBootDxe\HttpBootDxe.inf
+NetworkPkg\HttpUtilitiesDxe\HttpUtilitiesDxe.inf
+NetworkPkg\DnsDxe\DnsDxe.inf
+</code></pre>
+</li>
+<li>Update your platform DSC file to add following libraries to <code>[LibraryClasses]</code> section:<pre><code class="lang-ini">DpcLib|MdeModulePkg\Library\DxeDpcLib\DxeDpcLib.inf
+NetLib|MdeModulePkg\Library\DxeNetLib\DxeNetLib.inf
+IpIoLib|MdeModulePkg\Library\DxeIpIoLib\DxeIpIoLib.inf
+UdpIoLib|MdeModulePkg\Library\DxeUdpIoLib\DxeUdpIoLib.inf
+TcpIoLib|MdeModulePkg\Library\DxeTcpIoLib\DxeTcpIoLib.inf
+HttpLib|MdeModulePkg\Library\DxeHttpLib\DxeHttpLib.inf
+</code></pre>
+</li>
+<li>Update your platform FDF file to add following drivers:<pre><code class="lang-ini">INF MdeModulePkg\Universal\Network\DpcDxe\DpcDxe.inf
+INF MdeModulePkg\Universal\Network\SnpDxe\SnpDxe.inf
+INF MdeModulePkg\Universal\Network\MnpDxe\MnpDxe.inf
+INF NetworkPkg\Ip6Dxe\Ip6Dxe.inf
+INF NetworkPkg\TcpDxe\TcpDxe.inf
+INF NetworkPkg\Udp6Dxe\Udp6Dxe.inf
+INF NetworkPkg\Dhcp6Dxe\Dhcp6Dxe.inf
+INF NetworkPkg\HttpDxe\HttpDxe.inf
+INF NetworkPkg\HttpBootDxe\HttpBootDxe.inf
+INF NetworkPkg\HttpUtilitiesDxe\HttpUtilitiesDxe.inf
+INF NetworkPkg\DnsDxe\DnsDxe.inf
+</code></pre>
+</li>
+</ol>
+<p><strong><em>Note:</em></strong> You also need to add your own UNDI driver to your platform files.</p>
+
+                                
+                                </section>
+                            
+                        </div>
+                    </div>
+                    
+                    
+
+<div>
+    <hr>
+    
+      <h2>
+        <div style="position:absolute;text-align:left">Getting Started Guide of EDK II HTTP Boot</div>
+        <div style="position:absolute;width:100%;text-align:center">DRAFT [12/01/2020 07:05:24]</div>
+        <div style="text-align:right">Revision 0.90</div>
+      </h2>  
+    
+</div>
+
+
+
+                
+            </div>
+
+            
+                
+                <a href="enable_http_boot_over_an_ipv6_stack_on_a_platform_.html" class="navigation navigation-prev " aria-label="Previous page: Enable HTTP Boot over an IPv6 stack on a platform with EDKII network">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="modify_pcd_setting_to_allow_http_connections.html" class="navigation navigation-next " aria-label="Next page: Modify PCD setting to allow HTTP connections">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Enable HTTP Boot over IPv6 stack on a platform without EDKII network","level":"1.4.4","depth":2,"next":{"title":"Modify PCD setting to allow HTTP connections","level":"1.4.5","depth":2,"path":"enable_http_boot_for_your_system/modify_pcd_setting_to_allow_http_connections.md","ref":"enable_http_boot_for_your_system/modify_pcd_setting_to_allow_http_connections.md","articles":[]},"previous":{"title":"Enable HTTP Boot over an IPv6 stack on a platform with EDKII network","level":"1.4.3","depth":2,"path":"enable_http_boot_for_your_system/enable_http_boot_over_an_ipv6_stack_on_a_platform_.md","ref":"enable_http_boot_for_your_system/enable_http_boot_over_an_ipv6_stack_on_a_platform_.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{"draft":"yes","title":"Getting Started Guide of EDK II HTTP Boot","version":"Revision 0.90"},"plugins":["puml-aleung"],"pluginsConfig":{"puml-aleung":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"enable_http_boot_for_your_system/enable_http_boot_over_ipv6_stack_on_a_platform_wit.md","mtime":"2020-12-01T07:04:51.818Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-12-01T07:05:24.790Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
